@@ -1,0 +1,4 @@
+# Kundenunterlagen & Originaldateien – nicht auf GitHub / nicht veröffentlichen
+kunde/
+.DS_Store
+.vscode/

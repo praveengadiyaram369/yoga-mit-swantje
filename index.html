@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Yoga mit Swantje – Yoga in Montabaur</title>
+<meta name="description" content="Yoga in Montabaur mit Swantje: Kurse in der Gruppe, Einzelstunden und Workshops. Für alle, die anfangen, und alle, die weiter üben. Probestunde einfach per E-Mail anfragen."/>
+<link rel="canonical" href="https://www.yoga-mit-swantje.de/"/>
+<meta name="theme-color" content="#f4efe7"/>
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/svg+xml" href="assets/img/icons/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png"/>
+
+<!-- Open Graph (Vorschau beim Teilen in WhatsApp, Signal, Facebook …) -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.yoga-mit-swantje.de/"/>
+<meta property="og:title" content="Yoga mit Swantje – Yoga in Montabaur"/>
+<meta property="og:description" content="Yoga in deinem Tempo: Kurse, Einzelstunden und Workshops in Montabaur. Probestunde einfach per E-Mail anfragen."/>
+<meta property="og:image" content="https://www.yoga-mit-swantje.de/assets/img/social/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="de_DE"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<link rel="preload" href="assets/fonts/fraunces-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+
+<!-- Strukturierte Daten (Google). Adresse / E-Mail ergänzen, sobald bekannt. -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsActivityLocation",
+  "name":"Yoga mit Swantje",
+  "description":"Yoga in Montabaur: Kurse in der Gruppe, Einzelstunden und Workshops.",
+  "url":"https://www.yoga-mit-swantje.de/",
+  "image":"https://www.yoga-mit-swantje.de/assets/img/social/og-image.jpg",
+  "logo":"https://www.yoga-mit-swantje.de/assets/img/icons/icon-512.png",
+  "address":{"@type":"PostalAddress","addressLocality":"Montabaur","addressRegion":"Rheinland-Pfalz","addressCountry":"DE"},
+  "areaServed":"Montabaur und Westerwald",
+  "founder":{"@type":"Person","name":"Swantje","jobTitle":"Yogalehrerin"}
+}
+</script>
+</head>
+
+<!-- class="demo" markiert noch fehlende Angaben (gelb gestrichelt) und zeigt Foto-Notizen + Farbwelt-Umschalter.
+     Für den Livegang in ALLEN HTML-Dateien entfernen: <body class="demo"> → <body> -->
+<body class="demo">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<!-- SVG-Bausteine (einmal definiert, mehrfach verwendet) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Logo-Zeichen „Atemkreis“ (Entwurf A) -->
+    <symbol id="i-mark" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="108 24" transform="rotate(-62 24 24)"/>
+      <circle cx="24" cy="24" r="14" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="70 18" transform="rotate(118 24 24)"/>
+      <circle cx="24" cy="24" r="5" fill="var(--clay)"/>
+    </symbol>
+    <!-- Ringe (Drehrillen / Atemringe) -->
+    <symbol id="i-rings" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor">
+        <circle cx="100" cy="100" r="98" stroke-width=".6"/>
+        <circle cx="100" cy="100" r="84" stroke-width=".9"/>
+        <circle cx="100" cy="100" r="70" stroke-width=".6" stroke-dasharray="2 5"/>
+        <circle cx="100" cy="100" r="56" stroke-width="1.1"/>
+        <circle cx="100" cy="100" r="42" stroke-width=".6"/>
+      </g>
+    </symbol>
+    <!-- Grafik für Foto-Slots: Bogen + Ringe -->
+    <symbol id="i-slot" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+      <rect width="400" height="500" fill="var(--paper-2)"/>
+      <path d="M60 500V230a140 140 0 0 1 280 0v270z" fill="var(--card)"/>
+      <g fill="none" stroke="var(--accent)" opacity=".35">
+        <circle cx="200" cy="250" r="60" stroke-width="1"/>
+        <circle cx="200" cy="250" r="90" stroke-width=".7" stroke-dasharray="2 6"/>
+        <circle cx="200" cy="250" r="120" stroke-width=".7"/>
+      </g>
+      <circle cx="200" cy="250" r="26" fill="var(--clay)" opacity=".85"/>
+      <path d="M0 440c60-18 120-18 200 0s140 18 200 0v60H0z" fill="var(--stone)" opacity=".45"/>
+    </symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 7.5h3l1.6-2.5h6.8L17 7.5h3a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8.5a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 40 40"><path d="M8 30c0-8 3-14 10-18l1.5 2.5C15 17.5 13.5 21 13.5 24H18v8H8zm16 0c0-8 3-14 10-18l1.5 2.5C31 17.5 29.5 21 29.5 24H34v8H24z" fill="currentColor" opacity=".8"/></symbol>
+  </defs>
+</svg>
+
+<div class="demo-bar" role="note"><strong>Demo-Entwurf.</strong> Gelb markierte Stellen sind Platzhalter, die Swantje noch ergänzt. Texte sind Vorschläge. Unten rechts lassen sich drei Farbwelten ausprobieren.</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Yoga mit Swantje – zur Startseite">
+      <svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="brand-name">Yoga mit <em>Swantje</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#ueber-mich">Über mich</a></li>
+      <li><a href="#angebot">Angebot</a></li>
+      <li><a href="#stundenplan">Stundenplan</a></li>
+      <li><a href="#preise">Preise</a></li>
+      <li><a href="#erste-stunde">Erste Stunde</a></li>
+      <li><a href="#kontakt" class="btn btn-primary">Probestunde anfragen</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Yoga in Montabaur</span>
+      <h1>Yoga in <em>deinem</em> Tempo.</h1>
+      <p class="hero-lead">Ich zeige dir Bewegungen, die deinem Körper guttun, und Atemübungen, die du auch im Alltag nutzen kannst. Ganz gleich, ob du zum ersten Mal auf der Matte stehst oder schon länger übst.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-primary">Probestunde anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="#stundenplan" class="btn btn-ghost">Zum Stundenplan</a>
+      </div>
+      <ul class="hero-meta">
+        <li>Montabaur &amp; Westerwald</li>
+        <li>Kurse &amp; Einzelstunden</li>
+        <li><span class="ph" title="Bietet Swantje auch Online-Stunden an?">auch online</span></li>
+      </ul>
+    </div>
+
+    <div class="breath reveal" aria-hidden="true">
+      <svg class="breath-rings" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="98" stroke-width=".4" opacity=".5"/>
+        <g class="r-slow"><circle cx="100" cy="100" r="88" stroke-width=".8" stroke-dasharray="1 6" stroke-linecap="round"/></g>
+        <circle cx="100" cy="100" r="76" stroke-width=".5" opacity=".7"/>
+        <circle cx="100" cy="100" r="64" stroke-width=".9" opacity=".45"/>
+        <circle cx="100" cy="100" r="52" stroke-width=".4" opacity=".6"/>
+      </svg>
+      <div class="breath-core"></div>
+      <div class="breath-label"><span class="b-in">einatmen</span><span class="b-out">ausatmen</span><span class="b-still">durchatmen</span></div>
+      <p class="breath-caption">Atme einen Moment mit.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ornament" aria-hidden="true"></div></div>
+
+<!-- ================= ÜBER MICH ================= -->
+<section class="section" id="ueber-mich">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <figure class="slot ratio-45">
+          <svg class="slot-art" aria-hidden="true"><use href="#i-slot"/></svg>
+          <figcaption class="slot-note"><svg aria-hidden="true"><use href="#i-cam"/></svg><span><b>Foto: Porträt von Swantje</b>Hochformat 4:5, Tageslicht (z. B. am Fenster), ruhiger Hintergrund, gern auf der Matte oder im Kursraum. Natürlich statt gestellt.</span></figcaption>
+        </figure>
+        <svg class="stamp" viewBox="0 0 100 100" aria-hidden="true">
+          <defs><path id="stamp-circle" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"/></defs>
+          <circle cx="50" cy="50" r="48" fill="var(--paper)"/>
+          <text font-family="Figtree,sans-serif" font-size="9.4" letter-spacing="2.4" fill="currentColor"><textPath href="#stamp-circle">YOGA · MONTABAUR · WESTERWALD ·</textPath></text>
+          <circle cx="50" cy="50" r="7" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div class="about-copy reveal">
+        <span class="eyebrow">Über mich</span>
+        <h2>Hallo, ich bin <em>Swantje</em>.</h2>
+        <p class="lead">Auf meiner Matte geht es nicht um perfekte Posen, sondern darum, wie du dich danach fühlst.</p>
+        <p><span class="ph" title="Swantjes Geschichte in 2–4 Sätzen: Wie bist du zum Yoga gekommen? Was hat sich dadurch für dich verändert?">Hier erzählt Swantje in ein paar Sätzen, wie sie zum Yoga gekommen ist und was es ihr bedeutet. Zum Beispiel: ein Moment, der etwas verändert hat, oder warum sie angefangen hat zu unterrichten.</span></p>
+        <p>In meinen Stunden bekommst du klare Ansagen, Zeit zum Ankommen und für jede Übung eine Variante, die zu dir passt. Wenn etwas zwickt, sag es mir, dann finden wir gemeinsam eine andere Lösung.</p>
+
+        <dl class="facts">
+          <div><dt>Ausbildung</dt><dd><span class="ph" title="Name der Ausbildung, Schule/Verband, Umfang in Stunden, Jahr">[Yogalehrer-Ausbildung, Schule, Stunden, Jahr]</span></dd></div>
+          <div><dt>Weiterbildungen</dt><dd><span class="ph" title="z. B. Yin Yoga, Pränatal, Faszien … oder weglassen">[optional, z. B. Yin Yoga, Schwangerschaftsyoga …]</span></dd></div>
+          <div><dt>Unterrichtet seit</dt><dd><span class="ph" title="Jahr, seit dem Swantje unterrichtet">[Jahr]</span></dd></div>
+          <div><dt>Außerdem</dt><dd><span class="ph" title="Etwas Persönliches: Beruf, Hobby, Lieblingsort im Westerwald …">[etwas Persönliches, z. B. Lieblingsort im Westerwald]</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="values reveal-stagger">
+      <article class="value">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="9"/></g><circle cx="20" cy="20" r="3" fill="var(--clay)"/></svg>
+        <h3>Ankommen dürfen</h3>
+        <p>Jede Stunde beginnt mit ein paar ruhigen Minuten. Der Tag darf erst mal draußen bleiben.</p>
+      </article>
+      <article class="value">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M5 28c5-10 10-10 15 0s10 10 15 0"/><path d="M5 18c5-10 10-10 15 0s10 10 15 0" opacity=".5"/></g><circle cx="20" cy="28" r="2.6" fill="var(--clay)"/></svg>
+        <h3>Varianten für alle</h3>
+        <p>Du bekommst für jede Übung Alternativen. Steif, beweglich, müde oder voller Energie: Es gibt einen Weg, der zu dir passt.</p>
+      </article>
+      <article class="value">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M20 35V15"/><path d="M20 22c-6 0-10-4-10-10 6 0 10 4 10 10zM20 18c0-6 4-10 10-10 0 6-4 10-10 10z"/></g><circle cx="20" cy="35" r="2.6" fill="var(--clay)"/></svg>
+        <h3>Etwas mitnehmen</h3>
+        <p>Am Ende kennst du mindestens eine Übung, die du zu Hause oder im Büro machen kannst.</p>
+      </article>
+    </div>
+    <p class="note-demo">Hinweis für Swantje: Die drei Punkte oben sind Vorschläge, was dir beim Unterrichten wichtig sein könnte. Ersetze sie gern durch deine eigenen Worte.</p>
+  </div>
+</section>
+
+<!-- ================= ANGEBOT ================= -->
+<section class="section alt" id="angebot">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Angebot</span>
+      <h2>Wie wir zusammen <em>üben</em> können</h2>
+      <p>Im Kurs in der Gruppe, allein mit mir oder bei einem Workshop am Wochenende. Such dir aus, was gerade zu deinem Leben passt.</p>
+    </div>
+
+    <div class="offers reveal-stagger">
+      <article class="offer featured wide">
+        <svg class="offer-icon" viewBox="0 0 56 56" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="16" cy="18" r="5"/><circle cx="40" cy="18" r="5"/><circle cx="28" cy="14" r="5"/><path d="M6 44c2-9 6-13 10-13s8 4 10 13M30 44c2-9 6-13 10-13s8 4 10 13M18 44c2-10 6-15 10-15s8 5 10 15"/></g></svg>
+        <span class="tag">Wöchentlich</span>
+        <h3>Kurse in der Gruppe</h3>
+        <p>Feste Termine jede Woche, in einer überschaubaren Gruppe. Gut, um eine Routine aufzubauen und Menschen aus der Gegend kennenzulernen.</p>
+        <ul>
+          <li><span class="ph" title="Wie groß sind die Gruppen maximal?">max. [Zahl] Teilnehmende</span></li>
+          <li><span class="ph" title="Fortlaufend mit Karte oder als Kurs mit festem Start (z. B. 8 Wochen)?">fortlaufend oder als Kurs mit [X] Terminen</span></li>
+        </ul>
+        <a class="link-arrow js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Probestunde" href="#kontakt">Probestunde anfragen</a>
+      </article>
+
+      <article class="offer wide">
+        <svg class="offer-icon" viewBox="0 0 56 56" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="20" cy="15" r="5"/><circle cx="38" cy="19" r="4"/><path d="M8 44c2-10 6-16 12-16s10 6 12 16M30 44c1.5-7 4.5-11 8-11s6.5 4 8 11"/><path d="M4 48h48" opacity=".5"/></g></svg>
+        <span class="tag">1 : 1</span>
+        <h3>Einzelstunden</h3>
+        <p>Nur du und ich. Ideal, wenn du ganz neu anfängst, nach einer Verletzung wieder einsteigen willst oder ein bestimmtes Ziel hast, zum Beispiel einen entspannteren Rücken.</p>
+        <ul>
+          <li>Termin nach Absprache</li>
+          <li><span class="ph" title="Wo finden Einzelstunden statt: Studio, bei der Kundin zu Hause, online?">im Kursraum, bei dir zu Hause oder online</span></li>
+        </ul>
+        <a class="link-arrow js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Einzelstunde" href="#kontakt">Einzelstunde anfragen</a>
+      </article>
+
+      <article class="offer">
+        <svg class="offer-icon" viewBox="0 0 56 56" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 44l14-20 9 12 7-9 18 17z"/><circle cx="40" cy="13" r="5"/></g></svg>
+        <h3>Workshops &amp; Retreats</h3>
+        <p>Ein Nachmittag oder ein Wochenende mit einem Thema, zum Beispiel Rückbeugen, Atem oder Yoga im Wald.</p>
+        <a class="link-arrow js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Workshops und Retreats" href="#kontakt">Über Termine informieren</a>
+      </article>
+
+      <article class="offer">
+        <svg class="offer-icon" viewBox="0 0 56 56" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="8" y="12" width="40" height="34" rx="2"/><path d="M8 22h40M20 12V8h16v4"/><circle cx="28" cy="33" r="5"/></g></svg>
+        <h3>Yoga für Unternehmen</h3>
+        <p>Bewegte Pausen für Teams, im Büro oder online. Kurze Einheiten, ohne Umziehen, mit Übungen für den Schreibtisch.</p>
+        <a class="link-arrow js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Firmenyoga" href="#kontakt">Angebot anfragen</a>
+      </article>
+
+      <article class="offer">
+        <svg class="offer-icon" viewBox="0 0 56 56" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="44" height="28" rx="3"/><path d="M20 46h16M28 38v8"/><circle cx="28" cy="21" r="4"/><path d="M20 33c1.5-4 4.5-6 8-6s6.5 2 8 6"/></g></svg>
+        <h3>Online</h3>
+        <p>Live von zu Hause mitmachen, wenn der Weg zu weit ist oder das Wetter im Westerwald mal wieder nicht mitspielt.</p>
+        <a class="link-arrow js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Online-Yoga" href="#kontakt">Mehr erfahren</a>
+      </article>
+    </div>
+    <p class="note-demo">Hinweis für Swantje: Das sind fünf typische Angebote. Behalte nur die, die du wirklich anbieten möchtest. Eine Seite mit zwei Angeboten wirkt genauso gut.</p>
+
+    <div class="styles reveal">
+      <div>
+        <h3>Welche Yogastile?</h3>
+        <p>Ein kurzer Überblick, was dich in meinen Stunden erwartet. <span class="ph" title="Welche Stile unterrichtet Swantje? Unpassende streichen, fehlende ergänzen.">Beispiele, bitte anpassen.</span></p>
+      </div>
+      <ul class="chips">
+        <li><span class="ph" title="Beispiel-Stil">Hatha Yoga</span></li>
+        <li><span class="ph" title="Beispiel-Stil">Vinyasa Flow</span></li>
+        <li><span class="ph" title="Beispiel-Stil">Yin Yoga</span></li>
+        <li><span class="ph" title="Beispiel-Stil">Sanftes Yoga</span></li>
+        <li><span class="ph" title="Beispiel-Stil">Yoga für den Rücken</span></li>
+        <li><span class="ph" title="Beispiel-Stil">Atemübungen &amp; Entspannung</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUNDENPLAN ================= -->
+<section class="section" id="stundenplan">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stundenplan</span>
+      <h2>Deine Woche, mit <em>Pause</em> eingeplant</h2>
+      <p>Komm einfach zu einer Probestunde vorbei. Bitte melde dich vorher kurz an, damit ich weiß, dass du kommst.</p>
+    </div>
+
+    <div class="week reveal-stagger">
+      <div class="day">
+        <h3>Montag <span class="ph" title="Beispieltag">Beispiel</span></h3>
+        <div class="class">
+          <time><span class="ph" title="Beispielzeit – bitte echte Uhrzeit eintragen">18:00</span></time>
+          <b><span class="ph" title="Kursname / Stil">Sanftes Hatha</span></b>
+          <span class="level" data-l="1"><i><span></span></i> Für Einsteiger</span>
+          <small><span class="ph" title="Dauer und Ort">75 Min. · [Kursraum]</span></small>
+        </div>
+      </div>
+      <div class="day">
+        <h3>Mittwoch <span class="ph" title="Beispieltag">Beispiel</span></h3>
+        <div class="class">
+          <time><span class="ph" title="Beispielzeit">09:30</span></time>
+          <b><span class="ph" title="Kursname / Stil">Yoga am Morgen</span></b>
+          <span class="level" data-l="2"><i><span></span></i> Alle Level</span>
+          <small><span class="ph" title="Dauer und Ort">60 Min. · [Kursraum]</span></small>
+        </div>
+        <div class="class">
+          <time><span class="ph" title="Beispielzeit">19:00</span></time>
+          <b><span class="ph" title="Kursname / Stil">Vinyasa Flow</span></b>
+          <span class="level" data-l="3"><i><span></span></i> Mit Vorerfahrung</span>
+          <small><span class="ph" title="Dauer und Ort">75 Min. · [Kursraum]</span></small>
+        </div>
+      </div>
+      <div class="day">
+        <h3>Donnerstag <span class="ph" title="Beispieltag">Beispiel</span></h3>
+        <div class="class">
+          <time><span class="ph" title="Beispielzeit">18:30</span></time>
+          <b><span class="ph" title="Kursname / Stil">Yin &amp; Entspannung</span></b>
+          <span class="level" data-l="1"><i><span></span></i> Für Einsteiger</span>
+          <small><span class="ph" title="Dauer und Ort">75 Min. · online &amp; vor Ort</span></small>
+        </div>
+      </div>
+      <div class="day">
+        <h3>Samstag <span class="ph" title="Beispieltag">Beispiel</span></h3>
+        <div class="class">
+          <time><span class="ph" title="Beispielzeit">10:00</span></time>
+          <b><span class="ph" title="Kursname / Stil">Workshop</span></b>
+          <span class="level" data-l="2"><i><span></span></i> Alle Level</span>
+          <small><span class="ph" title="z. B. einmal im Monat">einmal im Monat · Termine per E-Mail</span></small>
+        </div>
+      </div>
+    </div>
+    <div class="week-legend">
+      <span class="level" data-l="1"><i><span></span></i> Für Einsteiger</span>
+      <span class="level" data-l="2"><i><span></span></i> Alle Level</span>
+      <span class="level" data-l="3"><i><span></span></i> Mit Vorerfahrung</span>
+      <span><span class="ph" title="Gibt es Ferienpausen?">In den Schulferien in Rheinland-Pfalz [gilt ein eigener Plan].</span></span>
+    </div>
+    <p class="note-demo">Hinweis für Swantje: Wochentage, Uhrzeiten und Kursnamen sind frei erfunden und dienen nur als Beispiel für die Darstellung. Sag mir einfach, wann du unterrichtest.</p>
+
+    <div class="booking reveal">
+      <svg class="booking-rings" aria-hidden="true"><use href="#i-rings"/></svg>
+      <div>
+        <h3>Online buchen</h3>
+        <p><span class="ph" title="Nutzt Swantje ein Buchungstool (z. B. Eversports, bsport, Fitogram)? Dann kommt hier ein Link hin. Ohne Tool: Anmeldung per E-Mail.">Hier kann später ein Link zu einem Buchungssystem stehen (z. B. Eversports). Bis dahin meldest du dich einfach per E-Mail an.</span></p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-light js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anmeldung Yogakurs" href="#kontakt">Per E-Mail anmelden <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PREISE ================= -->
+<section class="section alt" id="preise">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Preise</span>
+      <h2>Einfach und <em>ohne Vertrag</em></h2>
+      <p><span class="ph" title="Gibt es Verträge/Abos oder nur Karten? Formulierung danach anpassen.">Du kaufst eine Karte und kommst, wann es dir passt. Kein Abo, keine Kündigungsfristen.</span></p>
+    </div>
+
+    <div class="prices reveal-stagger">
+      <article class="price highlight">
+        <h3>Probestunde</h3>
+        <p class="sub">Zum Kennenlernen</p>
+        <div class="amount"><span class="ph" title="Preis der Probestunde (oder kostenlos?)">[€]</span></div>
+        <ul>
+          <li>Eine Stunde in einem Kurs deiner Wahl</li>
+          <li><span class="ph" title="Gibt es Leihmatten?">Matte kann geliehen werden</span></li>
+        </ul>
+        <a class="btn btn-primary js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Probestunde" href="#kontakt">Probestunde anfragen</a>
+      </article>
+      <article class="price">
+        <h3>10er-Karte</h3>
+        <p class="sub">Für alle Gruppenkurse</p>
+        <div class="amount"><span class="ph" title="Preis 10er-Karte">[€]</span></div>
+        <ul>
+          <li><span class="ph" title="Gültigkeitsdauer">[X] Monate gültig</span></li>
+          <li>In allen Kursen einlösbar</li>
+          <li><span class="ph" title="Gibt es Einzelstunden-Preise, 5er-Karten, ermäßigte Preise?">Einzelstunde: [€]</span></li>
+        </ul>
+        <a class="btn btn-ghost js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Frage zur 10er-Karte" href="#kontakt">Karte anfragen</a>
+      </article>
+      <article class="price">
+        <h3>Einzelstunde</h3>
+        <p class="sub">1 : 1, ganz auf dich abgestimmt</p>
+        <div class="amount"><span class="ph" title="Preis Einzelstunde">[€]</span> <small>/ <span class="ph" title="Dauer">60 Min.</span></small></div>
+        <ul>
+          <li>Termin nach Absprache</li>
+          <li><span class="ph" title="Gibt es Pakete, z. B. 3 Einzelstunden?">[Paket, z. B. 3 Stunden: €]</span></li>
+        </ul>
+        <a class="btn btn-ghost js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Einzelstunde" href="#kontakt">Einzelstunde anfragen</a>
+      </article>
+    </div>
+    <div class="price-notes">
+      <p><span class="ph" title="Kleinunternehmerin nach § 19 UStG? Dann: „Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.“ Sonst: „Alle Preise inkl. MwSt.“">Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</span></p>
+      <p><span class="ph" title="Nur, wenn ein Kurs von der Zentralen Prüfstelle Prävention zertifiziert ist (§ 20 SGB V). Sonst Satz löschen.">Für zertifizierte Präventionskurse kann deine Krankenkasse einen Teil der Kosten übernehmen. Frag mich gern.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ORT ================= -->
+<section class="section" id="ort">
+  <div class="wrap place">
+    <div class="map-art reveal" role="img" aria-label="Illustration: Lage des Kursraums in Montabaur">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="400" height="300" fill="var(--card)"/>
+        <g fill="none" stroke="var(--stone)" stroke-width="1">
+          <path d="M-10 250c60-30 90-10 140-40s80-80 150-70 100 40 130 30"/>
+          <path d="M-10 220c60-30 90-10 140-40s80-80 150-70 100 40 130 30" opacity=".8"/>
+          <path d="M-10 190c60-30 90-10 140-40s80-80 150-70 100 40 130 30" opacity=".6"/>
+          <path d="M-10 160c60-30 90-10 140-40s80-80 150-70 100 40 130 30" opacity=".4"/>
+          <path d="M-10 280c70-20 120 0 170-20s100-50 170-40 60 10 70 10" opacity=".8"/>
+        </g>
+        <path d="M-10 120C80 140 150 160 220 150s130-40 200-30" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 6" opacity=".45"/>
+        <g transform="translate(205 148)">
+          <circle r="46" fill="var(--clay)" opacity=".1"/>
+          <circle r="26" fill="var(--clay)" opacity=".18"/>
+          <circle r="9" fill="var(--clay)"/>
+          <circle r="3.5" fill="var(--card)"/>
+        </g>
+        <text x="228" y="186" font-family="Fraunces,serif" font-style="italic" font-size="18" fill="var(--ink)">Montabaur</text>
+        <text x="24" y="40" font-family="Figtree,sans-serif" font-size="10" letter-spacing="2.5" fill="var(--muted)">WESTERWALD</text>
+      </svg>
+    </div>
+    <div class="place-info reveal">
+      <span class="eyebrow">Ort &amp; Anfahrt</span>
+      <h2 style="font-size:clamp(2.1rem,6vw,3.2rem);margin-bottom:1.6rem">So findest du <em>zu mir</em></h2>
+      <address>
+        <span class="ph" title="Name des Kursraums/Studios (falls vorhanden)">[Name des Kursraums]</span><br/>
+        <span class="ph" title="Straße und Hausnummer">[Straße Hausnummer]</span><br/>
+        <span class="ph" title="PLZ bestätigen">56410</span> Montabaur
+      </address>
+      <ul class="place-list">
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="18" height="18" rx="4"/><path d="M10 18V8h4a3 3 0 0 1 0 6h-4"/></g></svg><div><b>Parken</b><span><span class="ph" title="Wo kann man parken?">[z. B. Parkplätze direkt am Haus]</span></span></div></li>
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="6" y="3" width="14" height="16" rx="3"/><path d="M6 12h14M9 23l2-4M17 23l-2-4"/><circle cx="10" cy="15.5" r=".8" fill="currentColor"/><circle cx="16" cy="15.5" r=".8" fill="currentColor"/></g></svg><div><b>Bus &amp; Bahn</b><span><span class="ph" title="Nächste Haltestelle / Fußweg vom Bahnhof Montabaur">[nächste Haltestelle, Minuten zu Fuß]</span></span></div></li>
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 18h20"/><path d="M5 18c0-5 3.5-8 8-8s8 3 8 8"/><path d="M13 10V6"/></g></svg><div><b>Mitbringen</b><span>Bequeme Kleidung, etwas zu trinken und <span class="ph" title="Gibt es Matten/Decken/Blöcke vor Ort?">gern eine eigene Matte (Leihmatten sind vorhanden)</span>.</span></div></li>
+      </ul>
+      <a class="link-arrow" href="https://www.openstreetmap.org/search?query=Montabaur" target="_blank" rel="noopener">Route in OpenStreetMap öffnen</a>
+      <p class="note-demo">Absichtlich keine eingebettete Karte: Google-Maps- oder OSM-Einbindungen übertragen Besucherdaten an Dritte. Ein normaler Link ist datenschutzfreundlich.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ERSTE STUNDE / FAQ ================= -->
+<section class="section alt" id="erste-stunde">
+  <div class="wrap first-grid">
+    <div class="reveal">
+      <span class="eyebrow">Deine erste Stunde</span>
+      <h2 style="font-size:clamp(2.1rem,6vw,3.4rem);margin-bottom:2.2rem">Neu beim Yoga? <em>Schön,</em> dass du da bist.</h2>
+      <ol class="steps">
+        <li><div><b>Schreib mir kurz</b><p>Eine Zeile per E-Mail reicht: welcher Kurs, wann, und ob es etwas gibt, das ich wissen sollte.</p></div></li>
+        <li><div><b>Komm ein paar Minuten früher</b><p>Dann ist Zeit zum Umziehen, Ankommen und für ein kurzes Hallo.</p></div></li>
+        <li><div><b>Mach mit, so wie es geht</b><p>Du darfst jederzeit pausieren. Niemand schaut, wie weit du kommst.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="faq reveal-stagger">
+      <details open>
+        <summary>Muss ich beweglich sein?</summary>
+        <div class="answer"><p>Nein. Beweglichkeit ist kein Startkriterium, sondern etwas, das mit der Zeit kommt. Für jede Übung gibt es einfachere Varianten.</p></div>
+      </details>
+      <details>
+        <summary>Was ziehe ich an?</summary>
+        <div class="answer"><p>Bequeme Kleidung, in der du dich gut bewegen kannst. Geübt wird barfuß, für die Entspannung am Ende sind warme Socken und ein Pulli gut.</p></div>
+      </details>
+      <details>
+        <summary>Kann ich vorher essen?</summary>
+        <div class="answer"><p>Am besten isst du zwei Stunden vorher nichts Schweres mehr. Ein kleiner Snack oder etwas zu trinken ist kein Problem.</p></div>
+      </details>
+      <details>
+        <summary>Ich habe Rückenschmerzen oder eine Verletzung. Geht das trotzdem?</summary>
+        <div class="answer"><p>Oft ja. Sprich vorher aber mit deiner Ärztin oder deinem Arzt und sag mir vor der Stunde Bescheid. Dann kann ich dir passende Alternativen zeigen.</p></div>
+      </details>
+      <details>
+        <summary>Ich bin schwanger. Kann ich mitmachen?</summary>
+        <div class="answer"><p><span class="ph" title="Wie handhabt Swantje das? Eigenes Angebot für Schwangere, Teilnahme nach Absprache, oder lieber nicht?">Bitte sprich mich vorher an. Dann klären wir gemeinsam, welcher Kurs passt.</span></p></div>
+      </details>
+      <details>
+        <summary>Was kostet die erste Stunde?</summary>
+        <div class="answer"><p>Die Probestunde kostet <span class="ph" title="Preis Probestunde">[€]</span>. Alle Preise findest du <a href="#preise">weiter oben</a>.</p></div>
+      </details>
+      <details>
+        <summary>Was passiert, wenn ich einen Termin nicht schaffe?</summary>
+        <div class="answer"><p><span class="ph" title="Absageregel: bis wann kostenlos absagen?">Sag bitte bis [X] Stunden vorher ab, dann verfällt nichts.</span></p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STIMMEN ================= -->
+<section class="section" id="stimmen">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stimmen</span>
+      <h2>Was Teilnehmende <em>sagen</em></h2>
+    </div>
+    <div class="quotes reveal-stagger">
+      <figure class="quote">
+        <span class="tag tag-example">Beispiel</span>
+        <svg aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote>Hier steht später ein kurzes, echtes Zitat einer Teilnehmerin, zum Beispiel darüber, wie sie sich nach der ersten Stunde gefühlt hat.</blockquote>
+        <figcaption>Vorname, seit [Jahr] dabei</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="tag tag-example">Beispiel</span>
+        <svg aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote>Zwei bis drei Sätze reichen völlig. Am glaubwürdigsten sind konkrete Erlebnisse statt allgemeinem Lob.</blockquote>
+        <figcaption>Vorname, Kurs am [Wochentag]</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="tag tag-example">Beispiel</span>
+        <svg aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote>Nur mit Einverständnis der Person veröffentlichen, am besten schriftlich, zum Beispiel per E-Mail.</blockquote>
+        <figcaption>Vorname, Einzelstunden</figcaption>
+      </figure>
+    </div>
+    <p class="quotes-note">Diese drei Karten sind Beispiele und keine echten Bewertungen. Sie werden durch echte Stimmen ersetzt oder entfernt.</p>
+  </div>
+</section>
+
+<!-- ================= KONTAKT ================= -->
+<section class="section on-dark contact" id="kontakt">
+  <svg class="contact-rings" aria-hidden="true"><use href="#i-rings"/></svg>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Schreib mir <em>einfach.</em></h2>
+      <p class="lead">Du hast eine Frage oder willst eine Probestunde ausmachen? Schick mir eine E-Mail, ich antworte dir <span class="ph" title="Realistische Antwortzeit">meist innerhalb von zwei Tagen</span>.</p>
+      <a class="mail-big js-mail ph" data-u="hallo" data-d="yoga-mit-swantje.de">hallo [at] yoga-mit-swantje.de</a>
+    </div>
+    <div class="contact-card reveal">
+      <h3>Direkt anfragen</h3>
+      <div class="contact-actions">
+        <a class="btn btn-light js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Probestunde" href="#kontakt">Probestunde anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-line-light js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Einzelstunde" href="#kontakt">Einzelstunde anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-line-light js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Firmenyoga" href="#kontakt">Yoga für Unternehmen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="contact-more">
+        <li><span>Online buchen</span><span class="ph" title="Link zum Buchungstool, falls gewünscht">[Link zum Buchungstool]</span></li>
+        <li><span>Instagram</span><span class="ph" title="Instagram-Profil? Nur als einfacher Link, kein eingebetteter Feed.">[@profilname]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="ornament" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#top" class="brand" aria-label="Yoga mit Swantje – nach oben">
+          <svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+          <span class="brand-name">Yoga mit <em>Swantje</em></span>
+        </a>
+        <p>Yoga in Montabaur und im Westerwald. Kurse, Einzelstunden und Workshops.</p>
+      </div>
+      <nav aria-label="Seitenbereiche">
+        <a href="#ueber-mich">Über mich</a><a href="#angebot">Angebot</a><a href="#stundenplan">Stundenplan</a><a href="#preise">Preise</a><a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Yoga mit Swantje · <span class="ph" title="Nachname">Swantje [Nachname]</span></span>
+      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Farbwelt-Umschalter: nur im Demo-Modus sichtbar -->
+<div class="theme-switch" role="group" aria-label="Farbwelt ausprobieren">
+  <span class="ts-label">Farbwelt</span>
+  <button type="button" data-set="ton" aria-pressed="true" title="Ton &amp; Kobalt (Westerwälder Steinzeug)"><span class="visually-hidden">Ton &amp; Kobalt</span></button>
+  <button type="button" data-set="salbei" aria-pressed="false" title="Salbei &amp; Moos"><span class="visually-hidden">Salbei &amp; Moos</span></button>
+  <button type="button" data-set="abend" aria-pressed="false" title="Pflaume &amp; Abendlicht"><span class="visually-hidden">Pflaume &amp; Abendlicht</span></button>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
