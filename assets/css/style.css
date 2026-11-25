@@ -82,7 +82,7 @@ strong{font-weight:600;color:var(--ink)}
 .btn-light:hover{background:var(--clay-lt);color:var(--ink)}
 .btn-line-light{border-color:rgba(255,255,255,.3);color:#fff}
 .btn-line-light:hover{border-color:#fff;color:#fff}
-.link-arrow{display:inline-flex;align-items:center;gap:.45rem;font-weight:500;text-decoration:none;color:var(--accent)}
+.link-arrow{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;font-weight:500;text-decoration:none;color:var(--accent)}
 .link-arrow::after{content:"→";transition:transform .3s var(--ease)}
 .link-arrow:hover::after{transform:translateX(4px)}
 
@@ -95,7 +95,7 @@ strong{font-weight:600;color:var(--ink)}
 .section-head h2{font-size:clamp(2.1rem,6vw,3.5rem)}
 .section-head h1{font-size:clamp(2.5rem,8vw,4.2rem)}
 .section-head p{margin-top:1.2rem;font-size:1.12rem;color:var(--muted)}
-.tag{display:inline-block;font:500 .72rem/1 var(--f-text);letter-spacing:.08em;text-transform:uppercase;padding:.45rem .7rem;border-radius:999px;background:var(--paper-2);color:var(--ink)}
+.tag{display:inline-block;font:500 .78rem/1 var(--f-text);letter-spacing:.08em;text-transform:uppercase;padding:.45rem .7rem;border-radius:999px;background:var(--paper-2);color:var(--ink)}
 .tag-example{background:var(--clay);color:#fff}
 
 /* ---------- Ornamentband (Westerwälder Steinzeug-Motiv) ---------- */
@@ -466,6 +466,13 @@ body.menu-open{overflow:hidden}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem}
 .footer-bottom nav a{color:rgba(255,255,255,.6)}
 @media (min-width:860px){.footer-top{grid-template-columns:1fr auto;align-items:end}}
+
+/* ---------- Mobil: Tippflächen mind. 44 px (Footer, Kontaktlinks) ---------- */
+@media (max-width:899px){
+  .footer nav{gap:0 1.4rem}
+  .footer nav a,.contact-more a,.place-list a,.mail-big{display:inline-flex;align-items:center;min-height:44px}
+  .contact-more li{align-items:center}
+}
 
 /* ---------- Unterseiten (Impressum, Datenschutz) ---------- */
 .page-hero{padding:clamp(3rem,8vw,5rem) 0 clamp(2rem,5vw,3rem)}
