@@ -1,0 +1,8 @@
+# Vorlage für die FTP-Zugangsdaten (manitu-Kundenmenü → FTP).
+# Kopieren nach ftp.yml und ausfüllen:  cp ftp.example.yml ftp.yml
+# ftp.yml wird nicht in git gespeichert und nicht auf den Server hochgeladen.
+
+host: ftp.example.de      # FTP-Server laut manitu
+user: benutzername        # FTP-Benutzer
+password: ""              # leer lassen = Passwort wird beim Hochladen abgefragt (sicherer)
+dir: ""                   # Zielordner auf dem Server, leer = Startordner des FTP-Zugangs

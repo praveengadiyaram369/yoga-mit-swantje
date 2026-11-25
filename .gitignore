@@ -2,3 +2,9 @@
 kunde/
 .DS_Store
 .vscode/
+
+# Original-Fotos (Webversionen liegen in assets/img/fotos/)
+images/
+
+# FTP-Zugangsdaten (nur lokal)
+ftp.yml

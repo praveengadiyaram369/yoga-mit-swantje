@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <circle cx="24" cy="24" r="21" fill="none" stroke="#2f4c9c" stroke-width="2" stroke-linecap="round" stroke-dasharray="108 24" transform="rotate(-62 24 24)"/>
-  <circle cx="24" cy="24" r="14" fill="none" stroke="#2f4c9c" stroke-width="2" stroke-linecap="round" stroke-dasharray="70 18" transform="rotate(118 24 24)"/>
-  <circle cx="24" cy="24" r="5" fill="#b4623b"/>
+  <circle cx="24" cy="24" r="21" fill="none" stroke="#7b4a6f" stroke-width="2" stroke-linecap="round" stroke-dasharray="108 24" transform="rotate(-62 24 24)"/>
+  <circle cx="24" cy="24" r="14" fill="none" stroke="#7b4a6f" stroke-width="2" stroke-linecap="round" stroke-dasharray="70 18" transform="rotate(118 24 24)"/>
+  <circle cx="24" cy="24" r="5" fill="#b06a40"/>
 </svg>

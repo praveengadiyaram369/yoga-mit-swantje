@@ -1,13 +1,27 @@
-# AGENTS.md – Hinweise für KI-Assistenten (Website „Yoga mit Swantje“)
+# AGENTS.md – Hinweise für KI-Assistenten (Website „YoMaNa“)
 
 Diese Datei zuerst lesen (bzw. an den Anfang eines Chats kopieren), bevor an der Website gearbeitet wird.
 
 ## Projekt
-- **Kundin:** Swantje *(Nachname noch offen)*, Yogalehrerin in Montabaur (Westerwald, Rheinland-Pfalz)
-- **Marke:** „Yoga mit Swantje“, geplante Domain `www.yoga-mit-swantje.de` (noch Platzhalter)
+- **Kundin:** Swantje Aller, Yogalehrerin in Montabaur (Westerwald, Rheinland-Pfalz)
+- **Marke:** „YoMaNa“ = **Yo**ga · **Ma**ssage · **Na**maste, Wortmarke `Yo<em>Ma</em>Na`. Domain `www.yomana.de`.
+  E-Mail-Adresse: `info@yomana.de` (bestätigt).
+- **Buchung:** Gruppenkurse laufen über Yogaresa (Montabaur): nur verlinken auf https://yogaresa.de/kurse/
+  (Zeiten, Preise, Anmeldung macht Yogaresa). Massagen (in der Hebammen Praxis Montabaur) buchbar über
+  https://yogaresa.de/massagen/ oder persönlich. Einzelstunden: persönlich per E-Mail / Kontaktseite.
+  Keine Online-Stunden. Instagram: @Yo_Ma_Na (instagram.com/yo_ma_na). E-Mail-Postfach bei manitu.
+  Kein eigener Stundenplan, keine Preisliste, kein Buchungs-Widget auf der Website.
 - **Zielgruppe:** Menschen aus Montabaur und Umgebung, viele Einsteiger, außerdem Firmen (Firmenyoga)
-- **Hosting:** Cloudflare (Workers & Pages) über GitHub, kein Build-Schritt
-- **Status:** Demo-Entwurf. Swantje hat noch keine Fotos und Texte.
+- **Hosting:** manitu (Apache, FTP/FTPS), kein Build-Schritt. Hochladen: `python3 scripts/deploy_ftp.py` (Zugangsdaten in `ftp.yml`,
+  nur lokal, in .gitignore; Vorlage `ftp.example.yml`; lädt nur Website-Dateien). Server-Einstellungen in `.htaccess`. Kein Cloudflare.
+- **Status:** Live-Fassung (Demo-Modus entfernt). Fotos vorhanden (Herbst, draußen; Originale in `images/`, nicht veröffentlicht), Texte fehlen noch.
+
+## Seiten
+- `index.html` (Start: Hero, Name, Kurz-Über-mich, Angebots-Teaser, Einblicke) · `ueber-mich.html` (Geschichte, Privat-Fotos)
+  · `angebot.html` (alle Angebote inkl. Massagen) · `erste-stunde.html` (Schritte, FAQ) · `kontakt.html` (Kontakt, Anfahrt)
+  · `impressum.html` · `datenschutz.html` · `404.html`
+- Kein Build: **Navigation, Footer, SVG-Symbole und Probestunde-Band (`.cta-band`) sind in jeder Seite kopiert.**
+  Änderungen daran in ALLEN Seiten machen. Aktuelle Seite im Menü: `aria-current="page"`.
 
 ## Regeln
 - Alle sichtbaren Inhalte auf **Deutsch**, korrekte Umlaute und ß. Anrede **„du“** (bis Swantje anders entscheidet).
@@ -19,7 +33,7 @@ Diese Datei zuerst lesen (bzw. an den Anfang eines Chats kopieren), bevor an der
   keine Social-Media-Plugins. Einfache Links nach außen sind ok. Sonst `datenschutz.html` anpassen.
 - Keine Frameworks, kein npm: nur HTML + `assets/css/style.css` + `assets/js/main.js`.
 - **Kein Kontaktformular und keine Telefonnummer** (Spam). E-Mail-Adressen nie im Klartext:
-  `<a class="js-mail" data-u="hallo" data-d="yoga-mit-swantje.de" data-subject="Anfrage Probestunde">hallo [at] yoga-mit-swantje.de</a>`
+  `<a class="js-mail" data-u="info" data-d="yomana.de" data-subject="Anfrage Probestunde">info [at] yomana.de</a>`
 - `404.html` nutzt root-absolute Pfade (`/assets/...`). Alle anderen Seiten relative Pfade.
 - `kunde/` enthält private Unterlagen: nie verlinken, nie aus `.gitignore` / `.assetsignore` entfernen.
 - Neue Unterseiten in `sitemap.xml` eintragen. `entwuerfe/` bleibt unverlinkt und `noindex`.
@@ -27,38 +41,36 @@ Diese Datei zuerst lesen (bzw. an den Anfang eines Chats kopieren), bevor an der
 - Mobile first; jede Änderung bei 390 px Breite prüfen.
 
 ## Design-System „Ton & Atem“ (assets/css/style.css → :root)
-- Idee: Westerwälder Steinzeug (Creme, Kobaltblau, gebrannter Ton) + Ringe (Drehrillen / Atemkreise).
-- Farben: `--paper #f4efe7`, `--paper-2 #ebe4d8`, `--card #fbf8f3`, `--stone #cfc8bc`, `--ink #1c2240`,
-  `--text #2b2d38`, `--muted #686873`, `--accent #2f4c9c` (Kobalt), `--accent-lt #a9b9ea`,
-  `--clay #b4623b` (Ton), `--clay-lt #e9b796`, `--line rgba(28,34,64,.13)`
-- Immer Variablen verwenden, nie Hex-Werte direkt in Komponenten (sonst funktionieren die Farbwelten nicht).
+- Farbwelt „Pflaume & Abendlicht“ (final, von Swantje gewählt) + Ringe (Atemkreise) als Motiv.
+- Farben: `--paper #f5eee9`, `--paper-2 #ece0da`, `--card #fcf7f4`, `--stone #d7c6c0`, `--ink #2a1c2b`,
+  `--text #33282f`, `--muted #6a5d65`, `--accent #7b4a6f` (Pflaume), `--accent-lt #e0b5d4`,
+  `--clay #b06a40` (Abendlicht/Ton), `--clay-lt #f0c19f` (Aprikose), `--line rgba(42,28,43,.13)`
+- Favicon, Logo-Datei und OG-Bild sind in diesen Farben. Es gibt keinen Farbwelt-Umschalter mehr.
+- Immer Variablen verwenden, nie Hex-Werte direkt in Komponenten (Farben nur in `:root` ändern).
 - Schriften: `--f-display` Fraunces 300 (Überschriften; ein Wort kursiv mit `<em>` → Tonfarbe),
   `--f-text` Figtree 400/500/600 (Fließtext, Buttons, Labels).
 - Sektion: `<section class="section">` (hell) / `section alt` (abgesetzt) / `section on-dark` (Nachtblau).
 - Sektionskopf: `<div class="section-head"><span class="eyebrow">Titel</span><h2>… <em>Wort</em></h2><p>…</p></div>`
 - Buttons: `btn btn-primary` · `btn btn-ghost` · auf dunkel `btn btn-light` / `btn btn-line-light`; Textlink `link-arrow`.
 - Einblenden: `reveal` (Element) bzw. `reveal-stagger` (Kinder nacheinander).
-- SVG-Bausteine sind oben in `index.html` als `<symbol>` definiert: `#i-mark` (Logo), `#i-rings`, `#i-slot`, `#i-cam`, `#i-arrow`, `#i-quote`.
+- SVG-Bausteine sind oben in `index.html` als `<symbol>` definiert: `#i-mark` (Logo), `#i-rings`, `#i-slot`, `#i-cam`, `#i-arrow`.
   Inhalte von `<use>` erben CSS-Variablen, lassen sich aber nicht per Selektor stylen.
 - Ornamentband: `<div class="ornament" aria-hidden="true"></div>` (CSS-Maske, färbt sich mit `--accent`).
 
 ## Demo-Modus
 - `<body class="demo">` zeigt: gelbe Platzhalter (`.ph`), Demo-Leiste, Foto-Notizen (`.slot-note`),
-  Hinweisboxen (`.note-demo`), Farbwelt-Umschalter (`.theme-switch`).
+  Hinweisboxen (`.note-demo`).
 - Livegang: `class="demo"` in allen HTML-Dateien entfernen; vorher alle `.ph` ersetzen
   (`grep -n 'class="ph\|ph"' *.html`).
 
 ## Häufige Aufgaben
+- **Fotos aufbereiten:** Original in `images/` ablegen, mit PIL je 600 px und 1200 px breit als JPEG nach
+  `assets/img/fotos/NAME-600.jpg` / `NAME-1200.jpg` speichern (ohne EXIF), im HTML per `srcset` einbinden.
+- **Galerie „Einblicke“:** `<ul class="gallery">` in index.html; `g-tall` = 2 Zeilen hoch, `g-wide` = 2 Spalten breit (Desktop-Mosaik).
 - **Foto einsetzen:** Datei nach `assets/img/fotos/`; im `<figure class="slot …">` das `<svg class="slot-art">` durch
   `<img src="assets/img/fotos/NAME.jpg" alt="…" width="…" height="…" loading="lazy">` ersetzen, `figcaption.slot-note` löschen,
   Fotograf/in im Impressum (Bildnachweis) nennen.
-- **Kurs im Stundenplan:** im passenden `.day` einen `<div class="class">` kopieren (time, b, `.level` mit `data-l="1|2|3"`, small).
-  Neuer Tag: ganzen `.day`-Block kopieren.
-- **Preis ändern:** `#preise` → `.price` → `.amount`.
 - **Angebot entfernen:** `<article class="offer">` löschen; im Desktop-Raster (`.offers`, 6 Spalten) ggf. `wide` anpassen.
-- **Buchungstool verlinken:** in `.booking` und `.contact-more` den Platzhalter durch einen normalen Link
-  (`target="_blank" rel="noopener"`) ersetzen. **Kein Widget einbetten.** Abschnitt in `datenschutz.html` (Punkt 5) ergänzen.
-- **Farbwelt festlegen:** Werte des gewählten `[data-theme]`-Blocks in `:root` übernehmen, Alternativen + `.theme-switch` (HTML, CSS, JS) löschen.
 - **E-Mail ändern:** `data-u` / `data-d` aller `.js-mail`-Links in index.html, impressum.html, datenschutz.html.
-- **Domain ändern:** `yoga-mit-swantje.de` in index.html (canonical, OG, JSON-LD), robots.txt, sitemap.xml ersetzen.
+- **Domain ändern:** `yomana.de` in index.html (canonical, OG, JSON-LD), robots.txt, sitemap.xml ersetzen.
 - **Favicon/OG-Bild neu:** `assets/img/icons/favicon.svg` ist die Quelle; PNGs/ICO daraus rendern (z. B. Headless Chrome + Python PIL).

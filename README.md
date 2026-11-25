@@ -1,11 +1,11 @@
 # Yoga mit Swantje · Website
 
 Website für **Yoga mit Swantje**, Yogalehrerin in Montabaur (Westerwald).
-Statisches HTML/CSS/JS ohne Framework und ohne Build-Schritt, kostenlos gehostet über **Cloudflare** (Deployment per `git push`).
+Statisches HTML/CSS/JS ohne Framework und ohne Build-Schritt, gehostet bei **manitu** (Deployment per `git push`).
 
 **Status:** Erster Demo-Entwurf zur Abstimmung mit der Kundin (November 2026). Swantje hat noch keine Fotos und Texte.
 Der Entwurf soll ihr zeigen, wie die Seite aussehen kann, welche Inhalte sie liefern muss und welche Entscheidungen anstehen.
-**Geplante Domain:** `www.yoga-mit-swantje.de` *(noch nicht registriert; steht in canonical, OG-Tags, JSON-LD, sitemap.xml, robots.txt)*
+**Domain:** `www.yomana.de` (Yoga · Massage · Namaste) *(steht in canonical, OG-Tags, JSON-LD, sitemap.xml, robots.txt)*
 
 ---
 
@@ -23,7 +23,7 @@ yoga-mit-swantje/
 │
 ├── assets/
 │   ├── css/style.css       ← gesamtes Design (Farben & Schriften als Variablen ganz oben)
-│   ├── js/main.js          ← Menü, Einblenden, E-Mail-Links (Spam-Schutz), Farbwelt-Umschalter (Demo)
+│   ├── js/main.js          ← Menü, Einblenden, E-Mail-Links (Spam-Schutz)
 │   ├── fonts/              ← Fraunces + Figtree als woff2, lokal (keine Google-Server)
 │   └── img/
 │       ├── logo/           ← logo-zeichen.svg (Bildmarke Entwurf A)
@@ -56,28 +56,24 @@ yoga-mit-swantje/
     (**bewusst kein Formular und keine Telefonnummer**: frühere Formulare wurden zugespammt)
 12. Footer mit Ornamentband
 
-## Designidee: „Ton & Atem“
+## Designidee: „Pflaume & Abendlicht“
 
-Montabaur liegt im Westerwald, direkt am **Kannenbäckerland**, bekannt für salzglasiertes graues
-Steinzeug mit **kobaltblauer** Bemalung. Daraus kommt die Farbwelt: warmes Steinzeug-Creme als Grund,
-Nachtblau/Kobalt für Text und Akzente, gebrannter Ton (Terrakotta) als warmer Akzent.
-Das wiederkehrende Motiv sind **Ringe**: die Drehrillen eines getöpferten Gefäßes und zugleich
-Atemkreise. Ein Ornamentband im Stil der Steinzeug-Bemalung trennt Bereiche.
-Die Seite wirkt ohne Fotos fertig: Typografie (Fraunces, weich & kursiv für Akzente) und SVG-Grafiken tragen.
+Warmes, helles Grundpapier, tiefe Pflaume für Text, Navigation und dunkle Flächen, Abendlicht/Ton
+und Aprikose als warme Akzente. Das wiederkehrende Motiv sind **Ringe** (Atemkreise), dazu ein
+Ornamentband als Trenner. Die Fotos (Herbstwiese, Holzskulptur, Klangschalen) tragen die Seite.
 
 | Token | Wert | Verwendung |
 |---|---|---|
-| `--paper` | `#f4efe7` | Seitenhintergrund (Steinzeug-Creme) |
-| `--paper-2` | `#ebe4d8` | abgesetzte Sektionen |
-| `--card` | `#fbf8f3` | Karten |
-| `--ink` | `#1c2240` | Text, dunkle Flächen |
-| `--accent` | `#2f4c9c` | Kobaltblau (Markenfarbe) |
-| `--clay` | `#b4623b` | gebrannter Ton (warmer Akzent, kursive Wörter) |
+| `--paper` | `#f5eee9` | Seitenhintergrund |
+| `--paper-2` | `#ece0da` | abgesetzte Sektionen |
+| `--card` | `#fcf7f4` | Karten |
+| `--ink` | `#2a1c2b` | Überschriften, dunkle Flächen |
+| `--accent` | `#7b4a6f` | Pflaume (Markenfarbe, Links, Labels) |
+| `--clay` | `#b06a40` | Abendlicht/Ton (kursive Wörter, Punkte) |
+| `--clay-lt` | `#f0c19f` | Aprikose (auf dunklem Grund, Atemkreis) |
 | Schriften | Fraunces 300/400 (+ kursiv) für Überschriften, Figtree 400/500/600 für Text |
 
-Zwei alternative Farbwelten (`[data-theme="salbei"]`, `[data-theme="abend"]`) sind in `style.css`
-vorbereitet und im Demo-Modus über den Umschalter unten rechts ausprobierbar. Nach Swantjes Wahl:
-gewünschte Werte in `:root` übernehmen, Umschalter und Alternativen löschen.
+Die Farbwelt ist final (Swantjes Wahl). Farben nur in `:root` in `style.css` ändern.
 
 Animationen sind dezent (Einblenden, Atemkreis) und werden bei `prefers-reduced-motion` komplett abgeschaltet.
 
@@ -116,10 +112,10 @@ Link für Swantje nach dem Deployment: `https://<projekt>.pages.dev/entwuerfe/lo
 Fehlende Angaben sind auf der Seite **gelb gestrichelt** markiert (`<span class="ph" title="…">`;
 der `title` erklärt beim Darüberfahren, was fehlt). Wenn alles ergänzt ist:
 in **allen** HTML-Dateien `<body class="demo">` → `<body>` ändern. Damit verschwinden auch Demo-Leiste,
-Foto-Notizen, Hinweisboxen und der Farbwelt-Umschalter.
+Foto-Notizen und Hinweisboxen.
 
 - [ ] Nachname, ladungsfähige Anschrift (Impressum, Datenschutz, Footer)
-- [ ] E-Mail-Adresse (aktuell Platzhalter `hallo` + `yoga-mit-swantje.de` in den `data-u`/`data-d`-Attributen)
+- [x] E-Mail-Adresse: `info@yomana.de` (`data-u="info"` + `data-d="yomana.de"`)
 - [ ] du oder Sie? (aktuell durchgehend „du“)
 - [ ] Texte „Über mich“, Ausbildung, Unterrichtserfahrung
 - [ ] Angebot: welche der 5 Angebote bleiben? Welche Yogastile?
@@ -127,19 +123,20 @@ Foto-Notizen, Hinweisboxen und der Farbwelt-Umschalter.
 - [ ] Preise, Gültigkeit Karten, Absageregel, Kleinunternehmerin (§ 19 UStG) oder USt-IdNr.
 - [ ] Krankenkassen-Satz nur bei zertifiziertem Präventionskurs (§ 20 SGB V), sonst löschen
 - [ ] Adresse Kursraum, Parken, ÖPNV, Leihmatten
-- [ ] Buchungstool (z. B. Eversports) ja/nein → Link + Absatz in datenschutz.html ergänzen
+- [x] Buchung: Gruppenkurse über Yogaresa (Link), Einzelstunden und Massagen persönlich per E-Mail
 - [ ] Instagram o. Ä. (nur als einfacher Link, kein eingebetteter Feed)
-- [ ] Fotos (siehe Fotoliste), Logo-Entscheidung, Farbwelt-Entscheidung
+- [x] Fotos, Farbwelt (Pflaume & Abendlicht)
+- [ ] Logo-Entscheidung
 - [ ] Echte Stimmen mit Einverständnis, sonst Sektion „Stimmen“ löschen
 - [ ] Impressum & Datenschutz final prüfen lassen, E-Mail-Anbieter in Datenschutz eintragen
-- [ ] Domain registrieren, Platzhalter-Domain prüfen (`grep -r "yoga-mit-swantje.de" .`)
+- [ ] Domain registrieren, Platzhalter-Domain prüfen (`grep -r "yomana.de" .`)
 - [ ] OG-Bild ggf. mit Foto/finalem Logo neu erstellen
 
 ## E-Mail-Schutz
 
 Die E-Mail-Adresse steht nirgends im HTML-Quelltext. Links haben die Klasse `js-mail` mit
-`data-u="hallo"` und `data-d="yoga-mit-swantje.de"`, optional `data-subject="Anfrage Probestunde"`.
-`assets/js/main.js` setzt daraus den `mailto:`-Link zusammen. Ohne JavaScript steht dort „hallo [at] yoga-mit-swantje.de“.
+`data-u="info"` und `data-d="yomana.de"`, optional `data-subject="Anfrage Probestunde"`.
+`assets/js/main.js` setzt daraus den `mailto:`-Link zusammen. Ohne JavaScript steht dort „info [at] yomana.de“.
 
 ## Lokal ansehen
 
@@ -150,7 +147,16 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 ---
 
-## Veröffentlichen: GitHub + Cloudflare
+## Veröffentlichen bei manitu
+
+1. Einmalig: `cp ftp.example.yml ftp.yml` und in `ftp.yml` Server, Benutzer (und optional Passwort) aus dem
+   manitu-Kundenmenü eintragen. `ftp.yml` steht in `.gitignore` und wird nie hochgeladen.
+2. `python3 scripts/deploy_ftp.py --dry-run` zeigt die Dateiliste, `python3 scripts/deploy_ftp.py` lädt hoch.
+3. Vorher bei manitu: SSL-Zertifikat für `yomana.de` und `www.yomana.de` aktivieren
+   (die `.htaccess` leitet alles auf `https://www.yomana.de` um) und den Auftragsverarbeitungsvertrag (AVV) abschließen.
+
+### Alte Variante: GitHub + Cloudflare (nicht mehr genutzt)
+
 
 Git im Terminal ist Version 2.23 (conda): `git init -b main` funktioniert **nicht**. Das Repo ist bereits
 vorbereitet mit `git init && git symbolic-ref HEAD refs/heads/main`.

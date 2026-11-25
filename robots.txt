@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /entwuerfe/
-Sitemap: https://www.yoga-mit-swantje.de/sitemap.xml
+Sitemap: https://www.yomana.de/sitemap.xml

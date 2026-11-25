@@ -62,15 +62,6 @@
     if (el.textContent.indexOf('[at]') !== -1) el.textContent = addr;
   });
 
-  /* --- Farbwelt-Umschalter (nur Demo, wird nicht gespeichert) --- */
-  document.querySelectorAll('.theme-switch button').forEach(function (btn, _, all) {
-    btn.addEventListener('click', function () {
-      var t = btn.getAttribute('data-set');
-      if (t === 'ton') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', t);
-      all.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
-    });
-  });
-
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 })();
